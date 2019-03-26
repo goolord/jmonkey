@@ -1,4 +1,6 @@
 .stack-work/
 jmonkey.cabal
 jmonkey-example.cabal
+dist*
+.ghc*
 *~
