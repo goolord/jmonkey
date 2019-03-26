@@ -2,15 +2,15 @@
 
 module Frontend.Html where
 
-import           Lucid
-import           JMonkey                        ( interpretString )
-import           Clay                           ( render )
-import           Frontend.Css
-import           Frontend.Js
-import           Data.Gender
-import           Data.Person
-import           Data.Selector
-import           Data.ToAttribute
+import Lucid
+import JMonkey                        ( interpretString )
+import Clay                           ( render )
+import Frontend.Css
+import Frontend.Js
+import Data.Gender
+import Data.Person
+import Data.Selector
+import Data.ToAttribute
 
 lucidHtml :: [Person] -> Html ()
 lucidHtml ps = do

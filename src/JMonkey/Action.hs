@@ -32,8 +32,8 @@ module JMonkey.Action
   )
 where
 
-import           Control.Monad.Free
-import           JMonkey.Data
+import Control.Monad.Free
+import JMonkey.Data
 
 -- | Empty JMonkey monad.
 type JMonkey = JMonkeyM ()
@@ -48,6 +48,7 @@ data Action n
   | Select Selector (Target -> n)
   | Add Target Selector n
   | Remove Target Selector n
+  | Toggle Target Selector n
   | On String Target JMonkey n
   | OnTime Repeat Int JMonkey n
   | If Cond JMonkey JMonkey n
